@@ -24,7 +24,8 @@ GameObject:
   - component: {fileID: 50158439150192764}
   - component: {fileID: 114855707237665562}
   - component: {fileID: 114730051637469038}
-  m_Layer: 0
+  - component: {fileID: 61344639878878076}
+  m_Layer: 8
   m_Name: Spaceship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -64,6 +65,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &61344639878878076
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1618265742838318}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.96, y: 0.96}
+    newSize: {x: 0.96, y: 0.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.06, y: 0.06}
+  m_EdgeRadius: 0
 --- !u!95 &95030836797762844
 Animator:
   serializedVersion: 3
@@ -95,6 +121,8 @@ MonoBehaviour:
   speed: 5
   shotDelay: 0.05
   bullet: {fileID: 1895380483000320, guid: bee52595027814948affbbfb9c100523, type: 2}
+  canShot: 0
+  explosion: {fileID: 1547771807895064, guid: 34b622ac8092d774ab56f0d85e35fa16, type: 2}
 --- !u!114 &114855707237665562
 MonoBehaviour:
   m_ObjectHideFlags: 1

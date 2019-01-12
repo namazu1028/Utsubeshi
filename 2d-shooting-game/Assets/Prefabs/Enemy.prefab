@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4662402138315500}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'ShotPosition '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,7 +34,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4161570962461226}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ShotPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49,7 +49,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4983753399974936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 'ShotPosition '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,8 @@ GameObject:
   - component: {fileID: 50879273547642844}
   - component: {fileID: 114188711860001648}
   - component: {fileID: 114061366138910560}
-  m_Layer: 0
+  - component: {fileID: 60235735361471722}
+  m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,6 +152,39 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!60 &60235735361471722
+PolygonCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1817017895674276}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.96, y: 0.96}
+    newSize: {x: 0.96, y: 0.96}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.12838218, y: 0.25220418}
+      - {x: -0.14885934, y: 0.25687337}
+      - {x: -0.2374014, y: 0.17862463}
+      - {x: -0.24127397, y: -0.14896822}
+      - {x: -0.15913095, y: -0.25596523}
+      - {x: 0.15225478, y: -0.25740147}
+      - {x: 0.23740135, y: -0.16838217}
+      - {x: 0.22191091, y: 0.18509579}
+      - {x: 0.20063698, y: 0.20896816}
 --- !u!95 &95494149767314686
 Animator:
   serializedVersion: 3
@@ -193,7 +227,8 @@ MonoBehaviour:
   speed: 0.5
   shotDelay: 0.3
   bullet: {fileID: 1244577250569438, guid: 361a4bab6ed088c469d0b2996a656c21, type: 2}
-  canshot: 0
+  canShot: 1
+  explosion: {fileID: 1547771807895064, guid: 34b622ac8092d774ab56f0d85e35fa16, type: 2}
 --- !u!212 &212943449227199072
 SpriteRenderer:
   m_ObjectHideFlags: 1
