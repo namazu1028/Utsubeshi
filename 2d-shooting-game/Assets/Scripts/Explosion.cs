@@ -2,7 +2,7 @@
 
 public class Explosion : MonoBehaviour
 {
-    void OnAnimationFinish()
+    private void OnAnimationFinish()
     {
         Destroy(gameObject);
     }
